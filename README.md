@@ -1,5 +1,6 @@
 **Azure Secure Infrastructure – Freelance Client Deployment (2025)**
 
+> 💼 This engagement was part of a freelance assignment for a startup client seeking to improve its cloud security posture during early production rollout. The goal was to build and test foundational infrastructure aligned with real-world operational needs.
 This project involved designing and deploying a secure, production-style Azure environment for a client. The scope included identity controls via Microsoft Entra, hardened access policies (JIT, Bastion), multi-tier networking, log analytics via Sentinel, and routing traffic through an Application Gateway.
 
 **Overview:**
@@ -28,7 +29,7 @@ Application Gateway routes traffic with custom path-based rules to backend VMs
 **Monitoring & Automation:**
 Defender for Cloud with custom alert rules
 Microsoft Sentinel as SIEM, integrated with Logic App for automated incident email notifications
-Infrastructure as Code foundations laid with Azure CLI and Bicep templates
+Converted key infra (VMs, Peering, App Gateway) into reusable Bicep templates to enable repeatable and auditable deployment. CLI used for quota override and script-based provisioning.
 
 **🧠 Key Lessons & Real-World Insights**
 **Quota Exhaustion Bypass:**
