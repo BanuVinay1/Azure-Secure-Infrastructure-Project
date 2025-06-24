@@ -33,14 +33,19 @@ Infrastructure as Code foundations laid with Azure CLI and Bicep templates
 **🧠 Key Lessons & Real-World Insights**
 **Quota Exhaustion Bypass:**
 CLI can sometimes provision resources even when Portal enforces quota limits.
+
 **VNet Peering:**
 Unique CIDR blocks required; overlapping addresses break peering.
+
 **App Gateway Deployment:**
 Must use a dedicated subnet—cannot share with VMs.
+
 **Secure Access:**
 Bastion is essential for VMs without public IPs; enables secure, just-in-time SSH/RDP.
+
 **JIT NSG Rules:**
 Remove pre-existing open port 22 rules for Defender JIT to function.
+
 **Sentinel vs Logic App:**
 Sentinel is a full SIEM, while Logic App automates incident responses.
 
