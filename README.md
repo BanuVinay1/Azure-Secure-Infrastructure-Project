@@ -1,4 +1,4 @@
-Azure Secure Infrastructure – Freelance Client Deployment (2025)
+**Azure Secure Infrastructure – Freelance Client Deployment (2025)**
 This project involved designing and deploying a secure, production-style Azure environment for a client. The scope included identity controls via Microsoft Entra, hardened access policies (JIT, Bastion), multi-tier networking, log analytics via Sentinel, and routing traffic through an Application Gateway.
 
 Overview:
