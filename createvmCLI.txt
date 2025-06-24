@@ -1,0 +1,21 @@
+--create vm sing CLI--
+
+az vm create \
+  --resource-group my-rg \
+  --name myVmBypass \
+  --image UbuntuLTS \
+  --vnet-name myVNet \
+  --subnet mySubnet \
+  --admin-username azureuser \
+  --generate-ssh-keys \
+  --size Standard_B1s \
+  --location "East US"
+
+
+
+-- request quota increase on CLI --
+az quota request submit \
+  --scope "/subscriptions/<sub-id>" \
+  --resource-name "standardBSFamily" \
+  --limit 10 \
+  --region "East US"
